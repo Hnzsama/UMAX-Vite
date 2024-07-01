@@ -135,7 +135,7 @@ const SignIn = () => {
               type="submit"
               className="w-full h-12 rounded-full bg-[#3D5FD9] text-[#F5F7FF] hover:bg-[#2347C5] mt-5"
             >
-              SIGN IN nejebbdbjdb
+              SIGN IN
             </button>
             <Link
               to="/ForgotPassword"
