@@ -21,12 +21,13 @@ const Metrics = ({
   const CustomBar = (props) => {
     const { x, y, width, height, fill } = props;
     const borderRadius = 1.6;
-
+    // console.log(`CustomBar y value: ${y}`);  
+    const safeY = isNaN(y) ? 0 : y;
     return (
       <g>
         <rect
           x={x}
-          y={y}
+          y={safeY}
           width={width}
           height={height}
           fill={fill}
@@ -77,7 +78,7 @@ const Metrics = ({
             horizontal: "center",
           }}
           transformOrigin={{
-            top: "top",
+            vertical: "top",
             horizontal: "center",
           }}
         >

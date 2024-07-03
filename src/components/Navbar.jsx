@@ -21,8 +21,6 @@ import { useLanguage } from "../LanguageContext";
 import { us, indonesia } from "../assets";
 import jwt_decode from "jwt-decode";
 import { BiChevronDown, BiCheck } from "react-icons/bi";
-import { CiGlobe } from "react-icons/ci";
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 
 
