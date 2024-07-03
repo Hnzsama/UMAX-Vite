@@ -21,12 +21,12 @@ const Metrics = ({
   const CustomBar = (props) => {
     const { x, y, width, height, fill } = props;
     const borderRadius = 1.6;
-
+    const safeY = isNaN(y) ? 0 : y;
     return (
       <g>
         <rect
           x={x}
-          y={y}
+          y={safeY}
           width={width}
           height={height}
           fill={fill}
