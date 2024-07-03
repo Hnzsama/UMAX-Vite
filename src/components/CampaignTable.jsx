@@ -221,7 +221,10 @@ function DataTable({ user }) {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'end',
-    marginTop: '20px',
+    marginRight: '20px',
+    marginBottom: '20px',
+    marginTop: '5px',
+    
   };
 
   const buttonStyle = {
@@ -732,7 +735,7 @@ function DataTable({ user }) {
             ...(canNextPage ? {} : disabledButtonStyle),
           }}
         >
-          <IoIosArrowForward />
+          {">>"}
         </button>{' '}
       </div>
       {/* End Pagination */}
